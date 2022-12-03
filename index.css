@@ -24,6 +24,12 @@ p {
   align-items: center;
 }
 
+.header-nav__container {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
 .header-nav {
   padding: 0px;
   margin: 0px;
@@ -42,6 +48,35 @@ p {
 
 .header-nav__item--active {
   color: #61a1c0;
+}
+
+#search-field {
+  background-color: #61a1c0;
+  padding: 12px;
+  border-radius: 100px;
+  width: 44px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+  display: flex;
+}
+
+#search-btn {
+  cursor: pointer;
+}
+
+#search-input {
+  transition-duration: 0.5s;
+  transition: all 0.5s;
+  width: 0px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  /* display: none; */
+  outline: none;
+  flex: 1;
+  padding-left: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-wrapper {
