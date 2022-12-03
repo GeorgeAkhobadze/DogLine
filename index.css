@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body,
+p {
+  margin: 0px;
+}
+
+.header {
+  position: absolute;
+  z-index: 100;
+  height: 112px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2.5px);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 100px 0px 108px;
+}
+
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.header-nav__item {
+  color: #565757;
+  cursor: pointer;
+}
+
+.header-nav__item--active {
+  color: #61a1c0;
+}
+
+.hero-wrapper {
+  height: 100vh;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hero-heading {
+  padding-left: 108px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 120px;
+  max-width: 764px;
+  color: rgba(23, 86, 118, 1);
+  position: relative;
+  z-index: 1;
+  top: 24%;
+}
+
+.hero-bottom-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 67px;
+  z-index: 1;
+  color: #175676;
+  padding: 0px 100px 0px 108px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-bottom-fade {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(-180deg);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+#scroll-down {
+  cursor: pointer;
+}
