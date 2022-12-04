@@ -4,6 +4,9 @@ body,
 p {
   margin: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .header {
   position: absolute;
@@ -137,14 +140,18 @@ p {
 
 #scroll-down {
   cursor: pointer;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  color: #175676;
 }
 
 #scroll-down::after {
   content: "Scroll Down";
 }
 
-.section-container {
+#section-container {
   margin: 0px 0px 150px 100px;
+  scroll-behavior: smooth;
 }
 
 .section-title {
@@ -192,7 +199,28 @@ p {
   justify-content: space-between;
   width: 479px;
   box-sizing: border-box;
-  cursor: pointer;
+}
+
+.swipe-card:hover .swipe-card__title {
+  display: none;
+}
+
+.swipe-card:hover .swipe-card__number {
+  display: none;
+}
+
+.swipe-card:hover .swipe-card__text {
+  display: block;
+}
+
+.swipe-card__text {
+  display: none;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  word-break: break-all;
+  white-space: break-spaces;
+  color: #565757;
 }
 
 .swipe-card--medium {
@@ -241,6 +269,7 @@ p {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 /* Tablet Responsive  */
 @media (max-width: 992px) {
   .header-nav__container {
@@ -273,7 +302,7 @@ p {
   .scroll-btn-container button {
     display: none;
   }
-  .section-container {
+  #section-container {
     margin-left: 20px;
   }
   .swipe-card__title {
@@ -295,6 +324,10 @@ p {
 @media (max-width: 768px) {
   .swipe-card {
     width: 290px;
+  }
+
+  .swipe-card__text {
+    font-size: 20px;
   }
   .header {
     padding: 0px 16px 0px 16px;
