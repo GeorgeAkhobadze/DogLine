@@ -20,10 +20,12 @@
       </div>
       <div class="header-nav__container">
         <ul class="header-nav">
-          <li class="header-nav__item header-nav__item--active">HOME</li>
-          <li class="header-nav__item">ABOUT</li>
-          <li class="header-nav__item">SERVICES</li>
-          <li class="header-nav__item">CONTACT</li>
+          <li class="header-nav__item header-nav__item--active">
+            <a href="#">HOME</a>
+          </li>
+          <li class="header-nav__item"><a href="#">ABOUT</a></li>
+          <li class="header-nav__item"><a href="#">SERVICES</a></li>
+          <li class="header-nav__item"><a href="#">CONTACT</a></li>
         </ul>
         <div id="search-field">
           <img id="search-btn" src="./assets/search-icon.svg" />
@@ -34,14 +36,43 @@
         <img src="./assets/burger-menu-icon.svg" />
       </div>
     </header>
-    <div class="hero-wrapper">
+    <section class="hero-wrapper">
+      <div class="hero-bg--overlay"></div>
       <h1 class="hero-heading">A Dog Grooming Service You Can Trust</h1>
       <div class="hero-bottom-container">
         <span>Dog grooming at-home, on-demand</span>
         <p id="scroll-down"></p>
       </div>
       <div class="hero-bottom-fade"></div>
-    </div>
+    </section>
+
+    <div class="section-container">
+      <h2 class="section-title">Services<div class="scroll-btn-container">
+        <button id="scroll-left-btn"><img src="/assets/arrow-left-svg.svg"/></button> <button id="scroll-right-btn"><img src="/assets/arrow-right-svg.svg"/></button>
+      </div></h2>
+      <div id="swipe-cards-container">
+        <div class="swipe-cards">
+          <div class="swipe-card">
+            <div class="swipe-card__title">Spa<br/> Bath</div>
+            <div class="swipe-card__number">.01</div>
+          </div>
+          <div class="swipe-card swipe-card--medium">
+            <div class="swipe-card__title">Spa<br/> Bath</div>
+            <div class="swipe-card__number">.02</div>
+          </div>
+          <div class="swipe-card swipe-card--dark">
+            <div class="swipe-card__title">Spa<br/> Bath</div>
+            <div class="swipe-card__number">.03</div>
+          </div>
+          <div class="swipe-card">
+            <div class="swipe-card__title">Spa<br/> Bath</div>
+            <div class="swipe-card__number">.04</div>
+          </div>
+
+        </div>
+
+        
+      </div>
   </body>
   <script src="index.js"></script>
 </html>
