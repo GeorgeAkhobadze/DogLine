@@ -149,9 +149,16 @@ html {
   content: "Scroll Down";
 }
 
-#section-container {
+.section-container {
   margin: 0px 0px 150px 100px;
   scroll-behavior: smooth;
+}
+
+.section-container--paragraph {
+  padding-right: 51px;
+  position: relative;
+  padding-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .section-title {
@@ -177,6 +184,7 @@ html {
 
 #swipe-cards-container {
   margin-top: 30.5px;
+  margin-bottom: 150px;
   height: 719px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -201,6 +209,10 @@ html {
   box-sizing: border-box;
 }
 
+.swipe-card:hover {
+  justify-content: center;
+}
+
 .swipe-card:hover .swipe-card__title {
   display: none;
 }
@@ -221,6 +233,7 @@ html {
   word-break: break-all;
   white-space: break-spaces;
   color: #565757;
+  overflow: hidden;
 }
 
 .swipe-card--medium {
@@ -229,6 +242,10 @@ html {
 
 .swipe-card--medium .swipe-card__title {
   color: #bde5ef;
+}
+
+.swipe-card--medium .swipe-card__text {
+  color: #dfdfdf;
 }
 
 .swipe-card--medium .swipe-card__number {
@@ -241,6 +258,10 @@ html {
 
 .swipe-card--dark .swipe-card__title {
   color: #bde5ef;
+}
+
+.swipe-card--dark .swipe-card__text {
+  color: #dfdfdf;
 }
 
 .swipe-card--dark .swipe-card__number {
@@ -268,6 +289,75 @@ html {
   width: 100%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
+  display: none;
+}
+
+.section-text-wrapper {
+  display: flex;
+  padding-top: 65px;
+  justify-content: space-between;
+}
+
+.section-paragraph img {
+  width: 100%;
+}
+
+.section-paragraph,
+.section-subtext {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  color: #565757;
+  width: 50%;
+}
+
+.section-subtext {
+  max-width: 596px;
+  margin-left: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-subtext img {
+  margin-right: 30px;
+}
+
+.section-paragraph p {
+  padding-bottom: 43px;
+  max-width: 763px;
+}
+
+.section-split-line {
+  width: 1px;
+  background-color: rgba(23, 86, 118, 1);
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 43%;
+  height: 88%;
+}
+
+.paragraph-circle {
+  position: absolute;
+  right: 0;
+  top: 23%;
+}
+
+/* Absolute responsive  */
+@media (max-width: 1645px) {
+  .section-split-line {
+    right: 48%;
+  }
+}
+
+@media (max-width: 1470px) {
+  .section-split-line {
+    right: 51%;
+  }
+  .paragraph-circle {
+    max-width: 350px;
+  }
 }
 
 /* Tablet Responsive  */
@@ -302,7 +392,7 @@ html {
   .scroll-btn-container button {
     display: none;
   }
-  #section-container {
+  .section-container {
     margin-left: 20px;
   }
   .swipe-card__title {
@@ -318,10 +408,43 @@ html {
   .hero-wrapper {
     background-position: 69%;
   }
+  .section-split-line {
+    display: none;
+  }
+  .section-paragraph,
+  .section-subtext {
+    width: 100%;
+  }
+  .section-subtext {
+    max-width: 100%;
+    margin: 45px 26px 0px 26px;
+  }
+  .section-text-wrapper {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .section-container--paragraph {
+    padding-right: 20px;
+  }
+  .section-paragraph p {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .paragraph-circle {
+    height: 244px;
+    top: 76%;
+  }
 }
 
 /* Landscape Phone and Below  */
 @media (max-width: 768px) {
+  .hero-bg--overlay {
+    display: block;
+  }
+  #swipe-cards-container {
+    margin-bottom: 20px;
+  }
   .swipe-card {
     width: 290px;
   }
@@ -345,6 +468,14 @@ html {
   .header {
     height: 45px;
     margin: 7px 0px;
+  }
+  .section-paragraph,
+  .section-subtext {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .paragraph-circle {
+    top: 74%;
   }
 }
 
