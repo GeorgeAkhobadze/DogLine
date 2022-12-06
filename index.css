@@ -525,6 +525,14 @@ dialog::backdrop {
   flex: 1;
 }
 
+.billing-title {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #175676;
+}
+
 #modal-billing {
   display: none;
   justify-content: space-between;
