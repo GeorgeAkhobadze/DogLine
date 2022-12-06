@@ -152,6 +152,7 @@ html {
 .section-container {
   margin: 0px 0px 150px 100px;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .section-container--paragraph {
@@ -364,6 +365,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-align: center;
+  margin: 0px;
 }
 
 .book-now-btn {
@@ -678,6 +680,85 @@ dialog::backdrop {
   color: rgba(23, 86, 118, 0.5);
 }
 
+.blog-container {
+  display: flex;
+  min-height: 775px;
+  margin: 75px 100px 150px 0px;
+  gap: 160px;
+  cursor: pointer;
+}
+
+.blog-title:hover .img-white-fade {
+  width: 100%;
+}
+
+.blog-img-container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 71%;
+  display: flex;
+}
+
+.img-white-fade {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.blog-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-title {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  padding-top: 143px;
+}
+
+.blog-title p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 90px;
+  color: #175676;
+  max-width: 546px;
+}
+
+.blog-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.blog-date {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 90px;
+  color: #61a1c0;
+}
+
+.blog-description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #565757;
+}
+
+.circle-2 {
+  position: absolute;
+  right: 0;
+}
+
 /* Absolute responsive  */
 @media (max-width: 1645px) {
   .section-split-line {
@@ -691,6 +772,19 @@ dialog::backdrop {
   }
   .paragraph-circle {
     max-width: 350px;
+  }
+}
+
+/* Medium Pc Responsive  */
+
+@media (max-width: 1200px) {
+  .blog-title,
+  .blog-text {
+    width: 100%;
+    flex: none;
+  }
+  .blog-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -771,6 +865,43 @@ dialog::backdrop {
   }
   .booking-container {
     margin-right: 16px;
+  }
+  .blog-container {
+    margin-bottom: 150px;
+    min-height: auto;
+  }
+  .blog-title {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0px;
+  }
+  .img-white-fade {
+    display: none;
+  }
+  .blog-img-container {
+    position: inherit;
+  }
+  .blog-title p {
+    max-width: inherit;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .blog-container {
+    margin-top: 45px;
+    margin-right: 16px;
+    gap: 30px;
+  }
+  .blog-date {
+    display: none;
+  }
+  .circle-2 {
+    height: 244px;
+    top: 8%;
+  }
+  .blog-description {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
