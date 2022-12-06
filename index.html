@@ -136,6 +136,175 @@
         </div>
       </div>
     </section>
+    <section class="section-container">
+      <h2 class="section-title">Book Now</h2>
+      <div class="booking-container">
+        <h3 class="booking-title">Schedule your appointment today</h3>
+        <button
+          class="book-now-btn"
+          onclick="document.querySelector('dialog').showModal()"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+    <!-- <dialog class="modal-container"></dialog> -->
+    <dialog id="modal">
+      <div class="modal__content">
+        <div class="modal__content-top">
+          <p id="modal__title">Checkout - Select A Package</p>
+          <div class="modal__close js-close-modal">
+            <img src="./assets/close-icon.svg" />
+          </div>
+        </div>
+
+        <div id="modal__content-packages">
+          <div class="modal__content-package">
+            <p class="content-package__title">Quick Wash</p>
+            <p class="content-package__price">$40</p>
+            <p class="content-package__description">
+              Shampoo and dry<br />
+              Paw treatment<br />
+              Quick Walk
+            </p>
+          </div>
+          <div class="modal__content-package modal__content-package--dark">
+            <p class="content-package__title">Day Spa</p>
+            <p class="content-package__price">$100</p>
+            <p class="content-package__description">
+              Deep condition<br />
+              Blow Out<br />
+              Quick Walk
+            </p>
+          </div>
+          <div class="modal__content-package modal__content-package--medium">
+            <p class="content-package__title">Delux Wash</p>
+            <p class="content-package__price">$240</p>
+            <p class="content-package__description">
+              Shampoo and dry<br />
+              Paw treatment<br />
+              Quick Walk
+            </p>
+          </div>
+        </div>
+        <div id="select-btn-container">
+          <button id="package-select-btn" disabled>Next</button>
+        </div>
+
+        <div id="modal-billing">
+          <div class="billing-fields">
+            <input
+              type="text"
+              class="billing-input-field"
+              placeholder="email for order confirmation"
+            />
+            <div class="split-fields-container">
+              <input
+                type="text"
+                class="billing-input-field input-field--sm"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                class="billing-input-field input-field--sm"
+                placeholder="Last Name"
+              />
+            </div>
+            <input
+              type="text"
+              class="billing-input-field"
+              placeholder="address line - 1"
+            />
+            <input
+              type="text"
+              class="billing-input-field"
+              placeholder="address line - 2"
+            />
+            <input type="text" class="billing-input-field" placeholder="city" />
+            <div class="split-fields-container">
+              <input
+                type="text"
+                class="billing-input-field input-field--sm"
+                placeholder="Country"
+              />
+              <input
+                type="text"
+                class="billing-input-field input-field--sm"
+                placeholder="State"
+              />
+            </div>
+            <div class="split-fields-container">
+              <input
+                type=""
+                class="billing-input-field input-field--sm"
+                placeholder="Zip"
+              />
+              <input
+                type="text"
+                class="billing-input-field input-field--sm"
+                placeholder="Phone"
+              />
+            </div>
+          </div>
+          <div class="billing-summary">
+            <p class="billing-summary-title">Order Summary(1)</p>
+            <div class="billing-summary-service">
+              <img src="./assets/logo.svg" />
+              <div class="service-info">
+                <p>Quick Wash</p>
+                <p>Qty: 1</p>
+              </div>
+              <p class="billing-package-price">$40.00</p>
+            </div>
+            <p class="promo-code-btn">+ Enter a promo code</p>
+            <div class="billing-prices-container">
+              <div class="billing-price">
+                <p>Subtotal</p>
+                <p>$40.00</p>
+              </div>
+              <div class="billing-price">
+                <p>Tax</p>
+                <p>$12.00</p>
+              </div>
+              <div class="billing-price billing-price-total">
+                <p>Tax</p>
+                <p>$12.00</p>
+              </div>
+            </div>
+            <div class="billing-policy-review">
+              <p class="billing-policy-title">Review & Place Order</p>
+              <p class="billing-policy-subtitle">
+                Please review the order details and payment details before
+                proceeding to confirm your order
+              </p>
+              <div class="input-container">
+                <input
+                  class="billing-checkbox"
+                  type="checkbox"
+                  id="agreetoterms"
+                  name="agree"
+                />
+                <label for="agreetoterms"
+                  >I agree to the Terms & conditions, Privacy policy & Return
+                  policy</label
+                >
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="billing-checkbox"
+                  type="checkbox"
+                  id="subscribe"
+                  name="newsletter"
+                />
+                <label for="subscribe">Sign me up to the email list</label>
+              </div>
+              <button class="place-order-btn">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
   </body>
   <script src="index.js"></script>
 </html>

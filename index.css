@@ -158,7 +158,7 @@ html {
   padding-right: 51px;
   position: relative;
   padding-bottom: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 .section-title {
@@ -344,6 +344,332 @@ html {
   top: 23%;
 }
 
+.booking-container {
+  background-color: #d1e5f2;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 53px;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  gap: 100px;
+}
+
+.booking-title {
+  color: #175676;
+  font-size: 60px;
+  line-height: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.book-now-btn {
+  text-decoration: underline;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #175676;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 300;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+#modal {
+  display: absolute;
+  border: none;
+  padding: 55px 85px;
+}
+
+dialog::backdrop {
+  background: rgba(23, 86, 118, 0.5);
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+
+.modal {
+}
+
+.modal__close {
+  text-align: right;
+  cursor: pointer;
+}
+
+#modal__title {
+  color: #175676;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#modal__content-packages {
+  display: flex;
+  gap: 13px;
+  padding-top: 82px;
+  padding-bottom: 72px;
+}
+
+.modal__content-package {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  background-color: #d1e5f2;
+  padding: 60px 70px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid #d1e5f2;
+}
+
+.modal__content-package--dark {
+  background-color: #61a1c0;
+}
+
+.modal__content-package--dark p {
+  color: #bde5ef;
+}
+
+.modal__content-package--medium {
+  background-color: #bde5ef;
+}
+
+.content-package__title {
+  color: #175676;
+  font-size: 40px;
+  line-height: 42px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  min-height: 84px;
+}
+
+.content-package__price {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: "Poppins", sans-serif;
+  color: #175676;
+  font-weight: 300;
+}
+
+.content-package__description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 55px;
+}
+
+#select-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#package-select-btn {
+  padding: 12px 75px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+  background-color: #175676;
+  border: none;
+  cursor: pointer;
+}
+
+#package-select-btn:disabled {
+  background-color: rgba(23, 86, 118, 0.5);
+  cursor: default;
+}
+
+.package-selected {
+  border: 2px solid #175676;
+}
+
+.billing-summary {
+  flex: 1;
+  padding: 42px 61px;
+  box-sizing: border-box;
+  background: rgba(209, 229, 242, 0.2);
+  max-width: 560px;
+}
+
+.billing-summary-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.192px;
+  line-height: 33px;
+  color: #175676;
+  margin-bottom: 47px;
+}
+
+.billing-fields {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 26px;
+  flex: 1;
+}
+
+#modal-billing {
+  display: none;
+  justify-content: space-between;
+  gap: 106px;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #175676;
+}
+
+.billing-package-price {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #175676;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 25px;
+}
+
+.billing-summary-service {
+  display: flex;
+  gap: 26px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(23, 86, 118, 0.5);
+  margin-bottom: 7px;
+}
+
+.billing-input-field {
+  border: 1.5px solid rgba(23, 86, 118, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 6 00;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 23px;
+}
+
+.promo-code-btn {
+  color: #61a1c0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.billing-prices-container {
+  max-width: 280px;
+  margin-left: auto;
+  margin-top: 39px;
+}
+
+.billing-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billing-price-total {
+  border-top: 1px solid rgba(23, 86, 118, 0.5);
+  padding-top: 4px;
+  margin-top: 7px;
+}
+
+.billing-price p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #175676;
+}
+
+.billing-checkbox {
+  border: 1px solid red;
+}
+
+.billing-policy-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #175676;
+  margin-bottom: 11px;
+}
+
+.billing-policy-review {
+  margin-top: 160px;
+}
+
+.billing-policy-review label {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #175676;
+}
+
+.billing-policy-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #175676;
+  margin-bottom: 22px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.place-order-btn {
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #175676;
+  font-family: "Poppins";
+  padding: 15px 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.split-fields-container {
+  display: flex;
+  gap: 45px;
+}
+
+.input-field--sm {
+  width: 50%;
+}
+
+.billing-input-field::placeholder {
+  color: rgba(23, 86, 118, 0.5);
+}
+
 /* Absolute responsive  */
 @media (max-width: 1645px) {
   .section-split-line {
@@ -435,6 +761,9 @@ html {
     height: 244px;
     top: 76%;
   }
+  .booking-container {
+    margin-right: 16px;
+  }
 }
 
 /* Landscape Phone and Below  */
@@ -474,8 +803,23 @@ html {
     font-size: 20px;
     line-height: 24px;
   }
+  .section-container {
+    margin-bottom: 150px;
+  }
   .paragraph-circle {
     top: 74%;
+  }
+  .section-subtext {
+    align-items: flex-start;
+  }
+  .booking-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .book-now-btn {
+    font-size: 24px;
+    line-height: 64px;
+    padding: 13px 60px;
   }
 }
 
